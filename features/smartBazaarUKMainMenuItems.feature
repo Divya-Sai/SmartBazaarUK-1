@@ -6,3 +6,4 @@ Feature: SmartBazaar UK Select options from Main Menu Categories
  #   And I click on Select Category dropDown
    And I enter text in SearchBox "Meera Anti Dandruff Shampoo (180ml)"
     Then I click on SearchIcon
+    And I close the browser
