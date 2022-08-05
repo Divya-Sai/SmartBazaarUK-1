@@ -3,6 +3,7 @@ package stepDefinition;
 import Pages.basePage;
 import Pages.smartBazaarUKAccountPage;
 import Pages.smartBazaarUKHomePage;
+import Pages.smartBazaarUKProdHomePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,6 +19,7 @@ public class steps {
     WebDriver driver;
     smartBazaarUKHomePage homepage;
     smartBazaarUKAccountPage accountPage;
+    smartBazaarUKProdHomePage prodHomePage;
 
 
     @Given("I can see {string} browser")
@@ -90,5 +92,16 @@ public class steps {
     public void i_click_on_seasonal_from_menu_options() throws InterruptedException {
         Thread.sleep(5000);
         homepage.clickfromMainMenuOptions();
+    }
+
+    @Then("I enter the product name {string} in the SearchBox")
+    public void i_enter_the_product_name_in_the_search_box(String item) {
+        prodHomePage = new smartBazaarUKProdHomePage(driver);
+        prodHomePage.SearchItemText(item);
+    }
+
+    @Then("I click on Search Symbol")
+    public void i_click_on_search_symbol() {
+        prodHomePage.clicksearchSymbol();
     }
 }
