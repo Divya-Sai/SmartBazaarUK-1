@@ -15,6 +15,9 @@ public class smartBazaarUKProdHomePage {
     @FindBy(xpath="(.//span[@class='aws-search-btn_icon'])[1]")
     private WebElement btnSearchProd;
 
+    @FindBy(xpath=".//button[@class='modal-trigger']")
+    private WebElement btnAskforProduct;
+
     public smartBazaarUKProdHomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
@@ -26,6 +29,10 @@ public class smartBazaarUKProdHomePage {
 
     public void clicksearchSymbol(){
         btnSearchProd.click();
+    }
+
+    public void clickOnAskforProduct(){
+        btnAskforProduct.click();
     }
 
 
