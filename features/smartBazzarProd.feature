@@ -4,3 +4,4 @@ Feature: This is used to test production application of smartBazaar UK
     When I enter the smartbazaar link "https://stage.smartbazaar.co.uk/"
     Then I enter the product name "Bangles" in the SearchBox
     And I click on Search Symbol
+    And I close the browser
