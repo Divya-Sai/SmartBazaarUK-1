@@ -5,3 +5,4 @@ Feature: This is used to test mouse hover in SmartBazaar UK Application
     Then I validate the title of the Page is "Smartbazaar - Home"
     And I click on Seasonal from menu options
     And I validate the title of the Page is "Smartbazaar - Dominican Mango (each)"
+    And I close the browser
