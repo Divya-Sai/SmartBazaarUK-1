@@ -18,9 +18,6 @@ public class smartBazaarUKProdHomePage {
     @FindBy(xpath=".//button[@class='modal-trigger']")
     private WebElement btnAskforProduct;
 
-    @FindBy(xpath=".//a[contains(text(),'Festivals')]")
-    private WebElement btnFestivalsProd;
-
     public smartBazaarUKProdHomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
@@ -38,9 +35,7 @@ public class smartBazaarUKProdHomePage {
         btnAskforProduct.click();
     }
 
-    public void clickOnFestivals(){
-        btnFestivalsProd.click();
-    }
+
 
 
 }
