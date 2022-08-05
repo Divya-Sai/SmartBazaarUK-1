@@ -104,4 +104,9 @@ public class steps {
     public void i_click_on_search_symbol() {
         prodHomePage.clicksearchSymbol();
     }
+
+    @Then("I click on AskForProduct")
+    public void iClickOnAskForProduct() {
+        prodHomePage.clickOnAskforProduct();
+    }
 }
